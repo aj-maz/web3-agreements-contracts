@@ -1,15 +1,13 @@
-# Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+##Problem:
 
-Try running some of the following tasks:
+Alice wants to hire Bob.
+Bob doesn’t trust Alice and Asks Alice to pay him forward.
+Even though Alice trust Bob’s skills, she doesn’t trust his work ethic. So he doesn’t want to pay him forward.
+Bob suggests that Alice put the money into a contract that is an ERC792 arbitrable and a Kleros court will resolve their dispute in case of having one.
+Alice really likes this idea, but the contract will take 3 months, and Alice doesn’t like to make her money idle for 3 months, because she thinks she can use it to make more.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+
+##Solution:
+
+Instead of locking money into the arbitrable contract, We could lock it in Aave, and when the contract is releasing the funds, it will give the employer the profit of the money that was deposited to Aave.
