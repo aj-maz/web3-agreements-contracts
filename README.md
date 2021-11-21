@@ -1,5 +1,5 @@
 
-##Problem:
+## Problem:
 
 Alice wants to hire Bob.
 Bob doesn’t trust Alice and Asks Alice to pay him forward.
@@ -8,6 +8,6 @@ Bob suggests that Alice put the money into a contract that is an ERC792 arbitrab
 Alice really likes this idea, but the contract will take 3 months, and Alice doesn’t like to make her money idle for 3 months, because she thinks she can use it to make more.
 
 
-##Solution:
+## Solution:
 
 Instead of locking money into the arbitrable contract, We could lock it in Aave, and when the contract is releasing the funds, it will give the employer the profit of the money that was deposited to Aave.
