@@ -22,3 +22,5 @@ The other functions are the standard functions of an arbitrable contract which c
 https://developer.kleros.io/en/latest/implementing-an-arbitrable.html
 
 In case of reclaiming payment to the employer, all the money with its profit will be given to the employer.
+
+## Client: https://github.com/Ajand/web3-agreements-client
