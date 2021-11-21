@@ -25,7 +25,7 @@ contract AgreementManager {
         address payable _employee,
         string memory _agreementURI,
         uint256 _prize
-    ) public {
+    ) public returns (address){
         Agreement agreement = new Agreement(
             _employee,
             _agreementURI,
@@ -36,11 +36,16 @@ contract AgreementManager {
         );
         agreements.push(agreement);
         emit AgreementCreated(agreements.length - 1);
+        return address(agreement);
     }
 
     function handleDues() public {
         for(uint i = 0; i < agreements.length; i++) {
             agreements[i].dued();
         }
+    }
+
+    function agreementCounts() public view returns (uint) {
+        return agreements.length;
     }
 }
